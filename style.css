@@ -1,0 +1,83 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  /* border: blue dashed 1px !important; */
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.5;
+  /* Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+legend {
+  font-weight: 500;
+}
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+fieldset {
+  border: none;
+}
+input {
+  max-width: 300px;
+}
+
+label {
+  font-size: 0.9rem;
+}
+button {
+  width: fit-content;
+}
