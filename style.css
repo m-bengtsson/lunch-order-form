@@ -60,6 +60,12 @@ input,
 label {
   line-height: 1.1;
 }
+
+#personal-information,
+#personal-information > div {
+  display: grid;
+  gap: 0.4rem;
+}
 legend {
   font-weight: 500;
 }
