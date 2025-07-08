@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lunch order</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+        <label for="organization">Organization</label>
+        <input type="text" name="organization" id="organization" />
+      </fieldset>
+      <fieldset>
+        <legend>Select Meal</legend>
+        <input type="radio" name="meal-of-the-day" id="meal-of-the-day" />
+        <label for="meal-of-the-day">Meal of the day</label>
+        <input type="radio" name="soup" id="soup" />
+        <label for="soup">Soup</label>
+        <input type="radio" name="pasta" id="pasta" />
+        <label for="pasta">Pasta</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dietary Restrictions</legend>
+        <input
+          type="checkbox"
+          name="gluten-intolerance"
+          id="glutenintolerant"
+        /><label for="gluten-intolerance">I am glutenintolerant</label>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
