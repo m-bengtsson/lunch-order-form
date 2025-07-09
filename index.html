@@ -12,51 +12,57 @@
     <title>Lunch order</title>
   </head>
   <body>
-    <form action="">
-      <h1>Lunch Order</h1>
-      <fieldset id="personal-information">
-        <legend>Personal Information</legend>
-        <div>
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" />
-        </div>
-        <div>
-          <label for="organization">Organization</label>
-          <input type="text" name="organization" id="organization" />
-        </div>
-      </fieldset>
-      <fieldset>
-        <legend>Select Meal</legend>
-        <div>
-          <input
-            type="radio"
-            name="meal"
-            id="meal-of-the-day"
-            value="meal-of-the-day"
-          />
-          <label for="meal-of-the-day">Meal of the day</label>
-        </div>
-        <div>
-          <input type="radio" name="meal" id="soup" value="soup" />
-          <label for="soup">Soup</label>
-        </div>
-        <div>
-          <input type="radio" name="meal" id="pasta" value="pasta" />
-          <label for="pasta">Pasta</label>
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <legend>Dietary Restrictions</legend>
-        <div>
-          <input
-            type="checkbox"
-            name="gluten-intolerance"
-            id="glutenintolerant"
-          /><label for="gluten-intolerance">I am glutenintolerant</label>
-        </div>
-      </fieldset>
-      <button type="submit">Submit</button>
-    </form>
+    <main>
+      <form action="">
+        <h1>Conference Lunch Order</h1>
+        <fieldset id="personal-information">
+          <legend>Personal Information</legend>
+          <div>
+            <label for="name">Name</label>
+            <input class="text-input" type="text" name="name" id="name" />
+          </div>
+          <div>
+            <label for="organization">Organization</label>
+            <input
+              class="text-input"
+              type="text"
+              name="organization"
+              id="organization"
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Select Meal</legend>
+          <div>
+            <input
+              type="radio"
+              name="meal"
+              id="meal-of-the-day"
+              value="meal-of-the-day"
+            />
+            <label for="meal-of-the-day">Meal of the day</label>
+          </div>
+          <div>
+            <input type="radio" name="meal" id="soup" value="soup" />
+            <label for="soup">Soup</label>
+          </div>
+          <div>
+            <input type="radio" name="meal" id="pasta" value="pasta" />
+            <label for="pasta">Pasta</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Dietary Restrictions</legend>
+          <div>
+            <input
+              type="checkbox"
+              name="gluten-intolerance"
+              id="gluten-intolerance"
+            /><label for="gluten-intolerance">I am glutenintolerant</label>
+          </div>
+        </fieldset>
+        <button type="submit" id="submit-button">Confirm Lunch Order</button>
+      </form>
+    </main>
   </body>
 </html>
